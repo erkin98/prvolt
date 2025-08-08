@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hunter-client"
+version = "0.1.0"
+description = "Typed minimal client for Hunter.io API (subset)"
+requires-python = ">=3.11"
+dependencies = [
+  "requests>=2.32.3",
+]
+
+[tool.mypy]
+python_version = "3.11"
+strict = true
+
+
